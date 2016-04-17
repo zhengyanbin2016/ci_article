@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>add</title>
+</head>
+<body>
+	<form action="<?php  echo site_url('admin/update') ?>" method="POST">
+	栏目名称：<input type="text" name="cid" value="<?php echo $title[0]['tname'];?>"/>
+	<input type="hidden" name="tid" value="<?php echo $title[0]['tid'];?>" />
+	<input type="submit" value="修改"/ >
+	</form>
+</body>
+</html>

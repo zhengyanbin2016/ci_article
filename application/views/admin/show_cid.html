@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>show_cid</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>序号</td>
+			<td>栏目名称</td>
+			<td>操作</td>
+		</tr>
+		<?php foreach ($title as $v):?>
+		<tr>
+			<td><?php echo $v['tid']?></td>
+			<td><?php echo $v['tname']?></td>
+			<td>
+			[<a href="<?php echo site_url('admin/alter_cid/'.$v['tid']);?>">修改</a>]
+			[<a href="<?php echo site_url('admin/delete_cid/'.$v['tid']);?>">删除</a>]
+		    </td>
+		</tr>
+		<?php endforeach ?>
+	</table>
+</body>
+</html>
